@@ -65,11 +65,11 @@ def main(args):
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     print(f"当前使用的设备是: {device}")
 
-    # model = EarlyExitViT(
-    #     image_size=32, patch_size=4, num_classes=args.num_classes,
-    #     dim=640, depth=10, heads=10, mlp_dim=2560,
-    #     exit_loc=[4, 8] # 示例: 在第4和第8层后退出
-    # ).to(device)
+    model = EarlyExitViT(
+        image_size=32, patch_size=4, num_classes=args.num_classes,
+        dim=640, depth=10, heads=10, mlp_dim=2560,
+        exit_loc=[4, 8] # 示例: 在第4和第8层后退出
+    ).to(device)
 
     # model = DynamicViT(
     #     image_size=32, patch_size=4, num_classes=args.num_classes,
@@ -78,19 +78,19 @@ def main(args):
     #     keep_ratios=[0.75, 0.5, 0.25]
     # ).to(device)
 
-    model = models.vit_b_16(weights=models.ViT_B_16_Weights.IMAGENET1K_V1).to(device)
-    # 2b. 替换分类头
-    original_in_features = model.heads.head.in_features
-    model.heads.head = nn.Linear(original_in_features, args.num_classes)
-    total_params = sum(p.numel() for p in model.parameters() if p.requires_grad)
-    print(f"使用的模型: ViT (CIFAR Config)")
-    print(f"总可训练参数: {total_params / 1e6:.2f}M")
+    # model = models.vit_b_16(weights=models.ViT_B_16_Weights.IMAGENET1K_V1).to(device)
+    # # 2b. 替换分类头
+    # original_in_features = model.heads.head.in_features
+    # model.heads.head = nn.Linear(original_in_features, args.num_classes)
+    # total_params = sum(p.numel() for p in model.parameters() if p.requires_grad)
+    # print(f"使用的模型: ViT (CIFAR Config)")
+    # print(f"总可训练参数: {total_params / 1e6:.2f}M")
     
     model = model.to(device)
 
     # 4. 模型复杂度分析
     print("\n模型复杂度分析:")
-    analyze_model_complexity(model, (3, 224, 224))
+    analyze_model_complexity(model, (3, 32, 32))
     print("-" * 50)
 
 if __name__ == '__main__':
