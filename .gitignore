@@ -1,0 +1,14 @@
+# 排除模型文件
+*.pt
+*.pth
+.vscode/
+.__pycache__/
+
+# 照片和视频文件
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.mp4
+*.mov
+*.avi

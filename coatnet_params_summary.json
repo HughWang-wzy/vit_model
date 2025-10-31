@@ -1,0 +1,158 @@
+{
+    "coatnet_models_v0.1": {
+        "params": {
+            "img_size": 32,
+            "block_types": [
+                "C",
+                "C",
+                "T",
+                "T"
+            ],
+            "dims": [
+                64,
+                128,
+                256,
+                512
+            ],
+            "depths": [
+                2,
+                2,
+                4,
+                2
+            ],
+            "transformer_heads": 8,
+            "transformer_dim_head": 32,
+            "mbconv_expand_ratios": [
+                4,
+                4
+            ],
+            "mbconv_kernel_sizes": [
+                3,
+                3
+            ],
+            "drop_path_rate": 0.1
+        },
+        "best_accuracy": {
+            "accuracy": 0.8571,
+            "epoch": 35,
+            "train_dir": "train3"
+        }
+    },
+    "coatnet_models_v0.2": {
+        "params": {
+            "img_size": 32,
+            "block_types": [
+                "C",
+                "C",
+                "T",
+                "T"
+            ],
+            "dims": [
+                64,
+                128,
+                256,
+                512
+            ],
+            "depths": [
+                3,
+                3,
+                5,
+                2
+            ],
+            "transformer_heads": 8,
+            "transformer_dim_head": 32,
+            "mbconv_expand_ratios": [
+                4,
+                4
+            ],
+            "mbconv_kernel_sizes": [
+                3,
+                3
+            ],
+            "drop_path_rate": 0.05
+        },
+        "best_accuracy": {
+            "accuracy": 0.845,
+            "epoch": 33,
+            "train_dir": "train4"
+        }
+    },
+    "coatnet_models_v0.3": {
+        "params": {
+            "img_size": 32,
+            "block_types": [
+                "C",
+                "C",
+                "T",
+                "T"
+            ],
+            "dims": [
+                96,
+                192,
+                384,
+                768
+            ],
+            "depths": [
+                3,
+                4,
+                6,
+                3
+            ],
+            "transformer_heads": 8,
+            "transformer_dim_head": 32,
+            "mbconv_expand_ratios": [
+                4,
+                4
+            ],
+            "mbconv_kernel_sizes": [
+                3,
+                3
+            ],
+            "drop_path_rate": 0.05
+        },
+        "best_accuracy": {
+            "accuracy": 0.8115,
+            "epoch": 90,
+            "train_dir": "train2"
+        }
+    },
+    "coatnet_models_v0.4": {
+        "params": {
+            "img_size": 32,
+            "block_types": [
+                "C",
+                "C",
+                "T",
+                "T"
+            ],
+            "dims": [
+                64,
+                128,
+                256,
+                512
+            ],
+            "depths": [
+                2,
+                2,
+                2,
+                2
+            ],
+            "transformer_heads": 8,
+            "transformer_dim_head": 32,
+            "mbconv_expand_ratios": [
+                4,
+                4
+            ],
+            "mbconv_kernel_sizes": [
+                3,
+                3
+            ],
+            "drop_path_rate": 0.05
+        },
+        "best_accuracy": {
+            "accuracy": 0.8035,
+            "epoch": 418,
+            "train_dir": "train1"
+        }
+    }
+}

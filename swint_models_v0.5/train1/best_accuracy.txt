@@ -1,0 +1,1 @@
+Best Accuracy: 0.3867 at Epoch: 1

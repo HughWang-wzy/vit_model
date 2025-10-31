@@ -1,0 +1,58 @@
+{
+    "swint_models_v0.1": {
+        "best_accuracy": {
+            "accuracy": 0.824,
+            "epoch": 1,
+            "train_dir": "train8"
+        }
+    },
+    "swint_models_v0.2": {
+        "best_accuracy": {
+            "accuracy": 0.8513,
+            "epoch": 36,
+            "train_dir": "train4"
+        }
+    },
+    "swint_models_v0.3": {
+        "best_accuracy": {
+            "accuracy": 0.5037,
+            "epoch": 9,
+            "train_dir": "train3"
+        }
+    },
+    "swint_models_v0.4": {
+        "best_accuracy": {
+            "accuracy": 0.8497,
+            "epoch": 3,
+            "train_dir": "train4"
+        }
+    },
+    "swint_models_v0.5": {
+        "best_accuracy": {
+            "accuracy": 0.8294,
+            "epoch": 28,
+            "train_dir": "train3"
+        }
+    },
+    "swint_models_v0.6": {
+        "best_accuracy": {
+            "accuracy": 0.8267,
+            "epoch": 22,
+            "train_dir": "train2"
+        }
+    },
+    "swint_models_v0.7": {
+        "best_accuracy": {
+            "accuracy": 0.8253,
+            "epoch": 184,
+            "train_dir": "train1"
+        }
+    },
+    "swint_models_v0.8": {
+        "best_accuracy": {
+            "accuracy": 0.8458,
+            "epoch": 1,
+            "train_dir": "train7"
+        }
+    }
+}
